@@ -20,9 +20,9 @@ import java.util.List;
 public class ListaPacotesAdapter extends BaseAdapter {
 
     private final List<Pacote> pacotes;
-    private Context context;
+    private final Context context;
 
-    public ListaPacotesAdapter (List<Pacote> pacotes, Context context) {
+    public ListaPacotesAdapter(List<Pacote> pacotes, Context context){
         this.pacotes = pacotes;
         this.context = context;
     }
@@ -81,4 +81,5 @@ public class ListaPacotesAdapter extends BaseAdapter {
         TextView local = viewCriada.findViewById(R.id.item_pacote_local);
         local.setText(pacote.getLocal());
     }
+
 }
